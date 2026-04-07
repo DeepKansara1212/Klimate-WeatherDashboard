@@ -1,0 +1,71 @@
+### Dependencies
+node_modules/
+
+### Build output
+dist/
+dist-ssr/
+build/
+out/
+*.tsbuildinfo
+
+### Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+### Runtime / temporary files
+*.pid
+*.seed
+*.pid.lock
+*.tmp
+*.temp
+.cache/
+.tmp/
+tmp/
+temp/
+
+### Test and coverage
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+### Environment files and local overrides
+.env
+.env.*
+!.env.example
+!.env*.example
+*.local
+
+### Package manager caches
+.npm/
+.pnpm-store/
+.yarn/
+
+### Framework / tooling caches
+.vite/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+
+### Editor and IDE files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+### OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
