@@ -118,3 +118,38 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .weather-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklch, var(--muted-foreground) 55%, transparent)
+      transparent;
+  }
+
+  .weather-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .weather-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .weather-scrollbar::-webkit-scrollbar-thumb {
+    background-color: color-mix(
+      in oklch,
+      var(--muted-foreground) 55%,
+      transparent
+    );
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .weather-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: color-mix(
+      in oklch,
+      var(--muted-foreground) 75%,
+      transparent
+    );
+  }
+}
